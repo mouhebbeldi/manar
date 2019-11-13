@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title >
+        freeweys
+        
+    </title>
+    <style>
+body {background-image: linear-gradient(to right top, #020202, #1d2024, #2d3a40, #3d5659, #54746c, #5b796c, #637e6b, #6d826b, #5c705d, #4c5e4f, #3d4c42, #2f3b34);
+}
+ 
+        img {
+  border-radius: 50%;
+}
+      .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}  
+        .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: dimgray;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 150%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+        
+   
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+        p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}        
+        a {
+  font-size: 0.5vw;
+  padding:0.5vw;
+  margin: 0.5vw;
+  outline-width: 0.5px;
+  outline-style: groove;
+  outline-color:black;
+  border: 1px solid;
+  }
+
+        
+        
+        
+        @font-face {
+    font-family: 'Sketch Block';
+    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot');
+    src: url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.woff') format('woff'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.ttf') format('truetype'),
+         url('http://tangledindesign.com/codepen/fonts/sketch_block-webfont.svg#SketchBlockBold') format('svg');
+}
+
+@font-face {
+    font-family: 'Museo 700';
+    src: url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot');
+    src: url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.woff') format('woff'),
+         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.ttf') format('truetype'),
+         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.svg#SketchBlockBold') format('svg');
+}
+
+.logo {
+  font: 84px 'Arial Narrow', sans-serif;/* I picked this font because it's the closest looking 'web safe' font http://cssfontstack.com/ */
+  color: #05644E;
+  text-transform: uppercase;
+    text-align:center;
+  letter-spacing: -4px;
+}
+
+/* stuff for both words */
+.logo span {
+  position: relative;
+}
+.logo span:before,
+.logo span:after {
+  content: '';
+  position: absolute;
+  border-width: 32px;/* makes a nice, big 64px square */
+  border-style: solid;
+  border-color: transparent;
+  height: 0;
+  z-index: 10;
+}
+
+/* stuff for 1st word */
+.logo .word1 {
+  color: #dc006c;
+  margin-right: -38px;
+  transform: rotateY(180deg);/* using Prefix free */
+  display: inline-block;/* required for transform */
+  z-index: 10;/* stack 1st word on top */
+}
+.logo .word1:before {
+  right: -4px;/* would be left, but we flipped the word */
+  top: -9px;
+  border-top-color: #282828;/* match background color */
+  border-right-color: #282828;/* would be left, but we flipped the word */
+}
+.logo .word1:after {
+  left: 17px;/* would be right, but we flipped the word */
+  bottom: -15px;
+  border-bottom-color: #282828;
+  border-left-color: #282828;/* would be right, but we flipped the word */
+}
+
+/* stuff for 2nd word */
+.logo .word2 {
+  z-index: 0;/* stack 2nd word below */
+}
+.logo .word2:before {
+  left: -4px;
+  top: -6px;
+  border-top-color: #282828;
+  border-left-color: #282828;
+}
+.logo .word2:after {
+  right: -4px;  
+  bottom: 4px;
+  border-bottom-color: #282828;
+  border-right-color: #282828;}
+        
+        
+        
+</style>
+    </head>
+    <body>
+
+<img src=logo.png width="90" height="100" alt="freeweys isi">
+     <a href="freeweeys" style = "font-style:normal;color:black;font-size:25px">freeweys isi
+        </a>
+<h1 class="logo">
+  <span class="word1">club</span>
+  <span class="word2">freeweys</span>
+</h1>
+        <hr>
+        <hr>
+        
+
+    
+        
+        
+   
+
+
+    <h2>presentation</h2>
+    <p>
+    Freeways est le nom du club de logiciels libres de l'Institut Supérieur d'Informatique ISI de Tunis El Manar.
+
+    Il a été crée en Janvier 2004 dans l’objectif de réunir la population des étudiants intéressés à promouvoir la philosophie du libre et de développer chez chacun d’eux le sens de la recherche et du travail en groupe.
+
+    Nos activités au sein du Club intègrent tant l’aspect éducatif que l’aspect professionnel. En ce sens, nous organisons des journées concernant l’esprit du logiciel libre aussi nous participons dans les manifestations libre.
+
+    Nous nous investissons par la même occasion sur d’autres activités à l’exemple des conférences et des ateliers sensibilisants sur le libre. Aussi, nous apportons une aide pour les débutants sur les aspects techniques et nous facilitons l’acquisition des distributions et des outils libres. 
+        
+    </p>
+     <h2>activiter</h2>
+         <p>
+       -Organisation des journées ouvertes concernant l'esprit du libre, des ateliers, des formations.
+-Collaboration avec des organismes et des experts dans le monde de l'open source.
+-Compétitions en développement
+Android<br>
+Sécurité<br>
+Robotique<br>
+             </p>
+        <h2>departement</h2>
+        <p>
+    
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    departement
+    </p>
+        
+<h2>historique</h2>
+        <p>
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        historique
+        </p>
+
+        <h2>photo de groupe freeweys</h2>
+
+<div class="container">
+  <img src="img2.jpg" >
+  <div class="overlay">
+    <div class="text">les responsables</div>
+  </div>
+</div>
+        <hr>
+        <hr>
+        <hr>
+       <p style="font-size:20px;float:right;"> <img src="img1.jpg"   width="400" height="500"       
+  style="float:right;width:100px;height:100px;">adresse: institut superieur d informatique ariana<br>
+  tele********</p>
+ 
+
+
+</body>
+    
+</html>
